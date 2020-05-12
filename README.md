@@ -44,6 +44,7 @@ npm install angular-in-memory-web-api --save
 ng g m pages/categories --routing
 ng g c pages/categories/category-list
 ng g c pages/categories/category-form
+ng g s pages/categories/shared/category
 
 
 
