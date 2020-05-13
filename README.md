@@ -40,11 +40,14 @@ npm install primeicons --save
 npm install chart.js --save
 npm install angular-in-memory-web-api --save
 
-## Componentes Finansys
+## Componentes Categoria Finansys
 ng g m pages/categories --routing
 ng g c pages/categories/category-list
 ng g c pages/categories/category-form
 ng g s pages/categories/shared/category
+
+## Componentes Entries Finansys
+ng g m pages/entries --routing
 
 
 
