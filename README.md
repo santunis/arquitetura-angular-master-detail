@@ -50,5 +50,10 @@ ng g s pages/categories/shared/category
 ng g m pages/entries --routing
 
 
+## Reestruturando Finansys
+ng g m core
+ng g m shared
+
+
 
 
