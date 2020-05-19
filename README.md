@@ -53,7 +53,7 @@ ng g m pages/entries --routing
 ## Reestruturando Finansys
 ng g m core
 ng g m shared
-
+ng g c shared/components/bread-crumb
 
 
 
