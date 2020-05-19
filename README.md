@@ -54,6 +54,7 @@ ng g m pages/entries --routing
 ng g m core
 ng g m shared
 ng g c shared/components/bread-crumb
+ng g c shared/components/page-header
 
 
 
