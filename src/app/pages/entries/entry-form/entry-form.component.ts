@@ -57,12 +57,6 @@ export class EntryFormComponent extends BaseResourceFormComponent<Entry> impleme
     super.ngOnInit();
   }
 
-  private loadCategories() {
-    this.categoryService.getAll().subscribe(
-      categories => this.categories = categories
-    );
-  }
-
   get typeOptions(): Array<any> {
     return Object.entries(Entry.types).map(
       ([value, text]) => {
@@ -79,21 +73,27 @@ export class EntryFormComponent extends BaseResourceFormComponent<Entry> impleme
       id: [null],
       name: [null, [Validators.required, Validators.minLength(2)]],
       description: [null],
-      type: [null, [Validators.required]],
+      type: ["expense", [Validators.required]],
       amount: [null, [Validators.required]],
       date: [null, [Validators.required]],
       paid: [true, [Validators.required]],
       categoryId: [null, [Validators.required]]
-    })
+    });
+  }
+
+  private loadCategories() {
+    this.categoryService.getAll().subscribe(
+      categories => this.categories = categories
+    );
   }
 
   protected creationPageTitle(): string {
-    return "Cadastro de Nova Categoria";
+    return "Cadastro de Novo Lançamento";
   }
 
   protected editionPageTitle(): string {
     const resourceName = this.resource.name || "";
-      return "Editando Categoria: " + resourceName;
+      return "Editando Lançamento: " + resourceName;
   }
 
 }
