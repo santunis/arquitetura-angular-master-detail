@@ -56,6 +56,6 @@ ng g m shared
 ng g c shared/components/bread-crumb
 ng g c shared/components/page-header
 ng g c shared/components/form-field-error --inline-template
-
+ng g c shared/components/server-error-messages
 
 
