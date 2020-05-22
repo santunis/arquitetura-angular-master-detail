@@ -59,4 +59,8 @@ ng g c shared/components/form-field-error --inline-template
 ng g c shared/components/server-error-messages
 ng g c core/components/navebar
 
+## Componentes Report Finansys
+ng g m pages/reports --routing
+ng g c pages/reports/reports
+
 
